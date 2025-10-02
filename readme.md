@@ -96,7 +96,6 @@ All endpoints are prefixed with `/api`. Authenticated routes require a `Bearer T
 | `POST` | `/api/register`      | Register a new user.           | None           |
 | `POST` | `/api/login`         | Log in and receive a JWT token.| None           |
 | `POST` | `/api/logout`        | Log the user out (invalidates token). | **Required** |
-| `POST` | `/api/refresh`       | Refresh an expired JWT token.  | **Required** |
 | `GET`  | `/api/{id}/profile`  | Get the current authenticated user's profile. | **Required** |
 
 ### Tasks (CRUD)
@@ -111,7 +110,7 @@ All endpoints are prefixed with `/api`. Authenticated routes require a `Bearer T
 
 ### Example Payloads
 
-**Register User (`POST /api/auth/register`)**
+**Register User (`POST /api/register`)**
 ```json
 {
     "name": "John Doe",
